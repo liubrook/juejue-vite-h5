@@ -10,7 +10,7 @@ module.exports = {
             user: 'root',
             host: '81.69.243.73',
             ref: 'origin/master',
-            repo: 'https://github.com/liubrook/juejue-vite-h5.git',
+            repo: 'git@github.com:liubrook/juejue-vite-h5.git',
             path: '/workspace/juejue-vite-h5',
             'post-deploy': 'git reset --hard && git checkout master && git pull && npm i --production=false && npm run build:release && pm2 startOrReload ecosystem.config.js', // -production=false 下载全量包
             env: {
